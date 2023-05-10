@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LogInViewController: UIViewController {
     
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     @IBAction func logInButtonTapped() {
         if userNameTF.text != "Deniss" || passwordTF.text != "123qwerty" {
-            showAlert(withTitle: "Stop", andMessage: "Wrong User Name or Password was entered")
+            showAlert(withTitle: "Oops", andMessage: "Wrong User Name or Password was entered")
         }
     }
     
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController {
+extension LogInViewController {
     private func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default)
