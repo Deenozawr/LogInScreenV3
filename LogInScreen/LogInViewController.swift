@@ -8,53 +8,40 @@
 import UIKit
 
 final class LogInViewController: UIViewController {
+    
     //MARK: - IBOutlet
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    @IBOutlet var forgotUserNamePassword: UIButton!
-    @IBOutlet var forgotPasswordButton: UIButton!
-    
-    @IBOutlet var logInButton: UIButton!
+    private let loginName = "Deniss"
+    private let password = "123qwerty"
     
     //MARK: - Override func
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
-        
-        if let touch = touches.first, !userNameTF.frame.contains(touch.location(in: view)) {
-            view.endEditing(true)
-        }
+        view.endEditing(true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.welcomeUser = "Welcome, \(userNameTF.text ?? "")!"
+        welcomeVC.welcomeUser = loginName
     }
     
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        guard userNameTF.text == "Deniss", passwordTF.text == "123qwerty" else {
-            return false
-        }
-        return true
-    }
     
-//MARK: - IBAction
+    //MARK: - IBAction
     @IBAction func logInButtonTapped() {
-        if userNameTF.text != "Deniss" || passwordTF.text != "123qwerty" {
-            showAlert(withTitle: "Oops", andMessage: "Wrong User Name or Password was entered")
+        guard userNameTF.text == loginName, passwordTF.text == password else {
+            showAlert(withTitle: "Oops wrong login or password", andMessage: "Please try again", textField: passwordTF)
+            return
         }
+        performSegue(withIdentifier: "openWelcomeVC", sender: nil)
     }
     
-    @IBAction func forgotUserName() {
-        if forgotUserNamePassword.isEnabled {
-            showAlert(withTitle: "Oops", andMessage: "Username is Deniss")
-        }
-    }
-    
-    @IBAction func forgotPasswordButtonTapped() {
-        if forgotPasswordButton.isEnabled {
-            showAlert(withTitle: "Oops", andMessage: "Password is 123qwerty")
-        }
+  
+    @IBAction func forgotRegisterData(_ sender: UIButton) {
+        sender.tag == 0
+        ? showAlert(withTitle: "Oops", andMessage: "Your name is \(loginName)")
+        : showAlert(withTitle: "Oops", andMessage: "Your password is \(password)")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -66,10 +53,10 @@ final class LogInViewController: UIViewController {
 
 //MARK: - Extension
 extension LogInViewController {
-    private func showAlert(withTitle title: String, andMessage message: String) {
+    private func showAlert(withTitle title: String, andMessage message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            self.passwordTF.text = ""
+            textField?.text = ""
         }
         
         alert.addAction(okAction)

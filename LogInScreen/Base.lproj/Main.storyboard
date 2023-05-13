@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aJk-ne-G2T">
-                                <rect key="frame" x="21.666666666666657" y="296.33333333333348" width="349.66666666666674" height="182"/>
+                                <rect key="frame" x="21.666666666666657" y="296.33333333333331" width="349.66666666666674" height="182"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="VNu-G3-T5Q">
                                         <rect key="frame" x="0.0" y="0.0" width="349.66666666666669" height="132.33333333333334"/>
@@ -41,14 +41,13 @@
                                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                                         <connections>
                                                             <action selector="logInButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="xlg-xu-pi9"/>
-                                                            <segue destination="3JP-Zv-57r" kind="presentation" modalPresentationStyle="fullScreen" id="h80-X9-oWM"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="3pc-oM-Swp">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="3pc-oM-Swp">
                                         <rect key="frame" x="0.0" y="152.33333333333337" width="349.66666666666669" height="29.666666666666657"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxH-PM-wHe">
@@ -57,17 +56,17 @@
                                                     <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotUserName" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gnm-Jh-xv8"/>
+                                                    <action selector="forgotRegisterData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fcl-ff-Bve"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="880-qa-B3J">
-                                                <rect key="frame" x="224.66666666666669" y="0.0" width="125" height="29.666666666666668"/>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="880-qa-B3J">
+                                                <rect key="frame" x="224.66666666666669" y="0.66666666666662877" width="125" height="28.333333333333332"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption1"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotPasswordButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="FgD-38-B0b"/>
+                                                    <action selector="forgotRegisterData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mCA-1d-MPw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -84,11 +83,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="forgotPasswordButton" destination="880-qa-B3J" id="yeh-IN-C2Q"/>
-                        <outlet property="forgotUserNamePassword" destination="HxH-PM-wHe" id="d77-4C-xxc"/>
-                        <outlet property="logInButton" destination="bBN-yd-WxZ" id="Kk0-rY-2Vj"/>
                         <outlet property="passwordTF" destination="3ia-zv-bjU" id="i1w-jR-1m2"/>
                         <outlet property="userNameTF" destination="lQ4-bA-6YK" id="OIr-wd-NO8"/>
+                        <segue destination="3JP-Zv-57r" kind="presentation" identifier="openWelcomeVC" modalPresentationStyle="fullScreen" id="Nda-gM-KKh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
