@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		843DB2CC2A116ECA009E1F70 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DB2CB2A116ECA009E1F70 /* TabBarViewController.swift */; };
+		843DB2CE2A117311009E1F70 /* IMG_9586.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 843DB2CD2A117311009E1F70 /* IMG_9586.JPG */; };
+		843DB2D02A117397009E1F70 /* IMG_9428.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 843DB2CF2A117397009E1F70 /* IMG_9428.HEIC */; };
+		843DB2D22A117432009E1F70 /* IMG_9428.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 843DB2D12A117432009E1F70 /* IMG_9428.jpeg */; };
+		843DB2D62A117883009E1F70 /* IMG_1259.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 843DB2D52A117883009E1F70 /* IMG_1259.HEIC */; };
+		843DB2D82A1178AB009E1F70 /* IMG_1259 — малый размер.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 843DB2D72A1178AB009E1F70 /* IMG_1259 — малый размер.jpeg */; };
+		843DB2DA2A117C80009E1F70 /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DB2D92A117C80009E1F70 /* UserInformation.swift */; };
 		84D25A092A0A3772005A2EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D25A082A0A3772005A2EB7 /* AppDelegate.swift */; };
 		84D25A0B2A0A3772005A2EB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D25A0A2A0A3772005A2EB7 /* SceneDelegate.swift */; };
 		84D25A0D2A0A3772005A2EB7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D25A0C2A0A3772005A2EB7 /* LogInViewController.swift */; };
@@ -18,6 +24,12 @@
 
 /* Begin PBXFileReference section */
 		843DB2CB2A116ECA009E1F70 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		843DB2CD2A117311009E1F70 /* IMG_9586.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_9586.JPG; path = ../../../../../../Downloads/IMG_9586.JPG; sourceTree = "<group>"; };
+		843DB2CF2A117397009E1F70 /* IMG_9428.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; name = IMG_9428.HEIC; path = ../../../../../../Downloads/IMG_9428.HEIC; sourceTree = "<group>"; };
+		843DB2D12A117432009E1F70 /* IMG_9428.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_9428.jpeg; path = ../../../../../../Downloads/IMG_9428.jpeg; sourceTree = "<group>"; };
+		843DB2D52A117883009E1F70 /* IMG_1259.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; name = IMG_1259.HEIC; path = ../../../../../../Downloads/IMG_1259.HEIC; sourceTree = "<group>"; };
+		843DB2D72A1178AB009E1F70 /* IMG_1259 — малый размер.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "IMG_1259 — малый размер.jpeg"; path = "../../../../../../Downloads/IMG_1259 — малый размер.jpeg"; sourceTree = "<group>"; };
+		843DB2D92A117C80009E1F70 /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 		84D25A052A0A3772005A2EB7 /* LogInScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D25A082A0A3772005A2EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D25A0A2A0A3772005A2EB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				84D25A0E2A0A3772005A2EB7 /* Main.storyboard */,
+				843DB2D72A1178AB009E1F70 /* IMG_1259 — малый размер.jpeg */,
+				843DB2D52A117883009E1F70 /* IMG_1259.HEIC */,
+				843DB2D12A117432009E1F70 /* IMG_9428.jpeg */,
+				843DB2CF2A117397009E1F70 /* IMG_9428.HEIC */,
+				843DB2CD2A117311009E1F70 /* IMG_9586.JPG */,
 				84D25A132A0A3774005A2EB7 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -100,6 +117,7 @@
 		84D25A242A0FFD96005A2EB7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				843DB2D92A117C80009E1F70 /* UserInformation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,7 +189,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D25A152A0A3774005A2EB7 /* LaunchScreen.storyboard in Resources */,
+				843DB2D62A117883009E1F70 /* IMG_1259.HEIC in Resources */,
+				843DB2D22A117432009E1F70 /* IMG_9428.jpeg in Resources */,
+				843DB2CE2A117311009E1F70 /* IMG_9586.JPG in Resources */,
 				84D25A102A0A3772005A2EB7 /* Main.storyboard in Resources */,
+				843DB2D02A117397009E1F70 /* IMG_9428.HEIC in Resources */,
+				843DB2D82A1178AB009E1F70 /* IMG_1259 — малый размер.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D25A0D2A0A3772005A2EB7 /* LogInViewController.swift in Sources */,
+				843DB2DA2A117C80009E1F70 /* UserInformation.swift in Sources */,
 				84D25A092A0A3772005A2EB7 /* AppDelegate.swift in Sources */,
 				84D25A0B2A0A3772005A2EB7 /* SceneDelegate.swift in Sources */,
 				843DB2CC2A116ECA009E1F70 /* TabBarViewController.swift in Sources */,
